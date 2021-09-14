@@ -6,6 +6,7 @@ module.exports = {
 	$title[$songInfo[title];$songInfo[url]
 	$thumbnail[$songInfo[thumbnail]]
 	$addField[Duração:;$songInfo[duration_left];yes]
+	$addField[Descrição:;$songInfo[description]
 	$footer[Adicionado por: $userTag[$songInfo[userID]];$userAvatar[$songInfo[userID]]]
 	$color[#83639D]
 	
