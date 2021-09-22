@@ -1,6 +1,4 @@
 module.exports = {
-	name: 'status',
+	name: 'ping',
 	code: `
-	$reply[$messageID;__**Status:**__\nPing: $pingms                       **|**        Database: $dbPingms\nUptime: $uptime                       **|**        Cpu: $cpu\n__**Packages Version:**__\nNode.js: $replaceText[$nodeVersion;v;]        **|**        Aoi.js: $packageVersion]
-	`
-};
+	$reply[$messageID;:timer:.  Webhook: $pingms\n:dividers:.  Database: $dbPingms]
