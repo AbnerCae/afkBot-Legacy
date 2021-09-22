@@ -8,7 +8,7 @@ bot.onMessage();
 bot.onInteractionCreate();
 bot.loadCommands('./commands/');
 bot.status({
-	text: '🍃',
+	text: '📦.  Rodando versão Minimalist-Dev.',
 	type: 'WATCHING',
 	time: 12
 });
