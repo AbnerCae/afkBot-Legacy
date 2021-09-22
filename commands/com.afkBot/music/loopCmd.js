@@ -1,13 +1,20 @@
 module.exports = {
 	name: 'loop',
 	code: `
-	$if[$message[1]==song]
+	$if[$message[1]==]
 	$loopSong
-	$elseIf[$message[1]==queue]
+	$addCmdReactions[🔂]
+	$elseIf[$toLowercase[$message[1]]==queue]
 	$loopQueue
+	$addCmdReactions[🔁]
 	$endelseIf
-	$else
-	Escolha \`song\` ou \`queue\`
+	$elseIf[$loopStatus==song]
+	$loopSong
+	$addCmdReactions[▶️]
+	$endelseIf
+	$elseIf[$loopStatus==queue]
+	$addCmdReactions[▶️]
+	$endelseIf
 	$endif
 	`
 };
