@@ -1,6 +1,7 @@
 module.exports = {
-	name: 'dizer',
+	name: 'say',
+	aliases: ['dizer', 'falar'],
 	code: `
-	$message\n<:talkingHome:886288888795103253> **|** Mensagem enviada por <@$authorID>
+	$message\n:small_blue_diamond:.  Mensagem enviada por <@$authorID>
 	`
 };
